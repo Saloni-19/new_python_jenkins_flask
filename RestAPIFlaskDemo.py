@@ -77,7 +77,7 @@ def createProduct():
     result = product_schema.dump(product.create())                  #Flask will create insert query by create() method
     return make_response(jsonify({"product":result}),201)           #201-successfully executed and new object is created
 
-@app.route('/products',methods=['GET'])
+@app.route('/ibm',methods=['GET'])
 def getAllProducts():
     get_products = Product.query.all()
     productSchema = ProductSchema(many=True)
