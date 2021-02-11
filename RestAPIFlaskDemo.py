@@ -8,6 +8,8 @@ Created on Wed Jan 27 10:51:43 2021
 app = express()
 app.get('',())
 app.post('',())
+app.put('',())
+
 """
 
 import json
